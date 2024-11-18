@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fullstack Prints</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+    />
+    <style>
+      /* Added styles */
+      #products-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 20px;
+      }
+      .product-card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 1rem;
+        max-width: 200px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .product-card h2 {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+      }
+      .product-card p {
+        margin: 0.25rem 0;
+        font-size: 0.875rem;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body class="w-100 sans-serif bg-white">
+    <header class="pa3 bg-light-gray">
+      <h1 class="f3">Fullstack Prints</h1>
+    </header>
+    <main class="pa3">
+      <div id="products-container"></div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
